@@ -1,0 +1,17 @@
+Installation on Ubuntu(using CLI)
+
+
+Step 1: sudo apt update
+
+Step 2: sudo apt install mongodb
+
+Step 3: sudo systemctl status mongodb
+
+Step 4:  mongod --version
+
+Step 5:  mongo
+
+
+
+---------------------------------------------------------------------
+Downloading  MongoDB+Compass Together on Windwos/Linux/MAC: https://www.mongodb.com/try/download/community

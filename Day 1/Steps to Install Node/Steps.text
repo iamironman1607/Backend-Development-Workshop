@@ -1,0 +1,17 @@
+//Steps to Install Node on Ubuntu Machine(Using CLI)
+
+Step 1: sudo apt update
+
+Step 2: sudo apt install nodejs 
+
+Step 3: node -v
+
+Step 4: sudo apt install npm
+
+Step 5: npm -v
+
+Reference: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
+
+---------------------------------------------------------------------------------------------------------
+
+Download on Linux/Window/Mac: https://nodejs.org/en/download/current
