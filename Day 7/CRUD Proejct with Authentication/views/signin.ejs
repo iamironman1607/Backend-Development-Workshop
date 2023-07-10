@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+
+<form action="/signup">
+  <h2>Login</h2>
+  <div class="email error" id="emailError"></div>
+  <label for="email">Email</label>
+  <input type="text" name="email" required />
+  <!-- <div class="email error" id="emailError"></div> -->
+  <label for="password">Password</label>
+  <input type="password" name="password" required />
+  <div class="password error" id="pwdError"></div>
+  <button>login</button>
+</form>
+
+<%- include('partials/footer'); -%>
+
+
