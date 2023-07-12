@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true)
+require('dotenv').config();
 
-mongoose.connect("mongodb://localhost:27017/JWT_DB")
+mongoose.connect(process.env.MONGODB_URI)
 .then((conn)=>{
     console.log("DB Connected to",conn.connection.host);
 })

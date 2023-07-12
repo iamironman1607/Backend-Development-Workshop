@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/userModel');
+require('dotenv').config();
 
 exports.verifyAuth = async (req, res, next) => {
 
@@ -7,7 +8,7 @@ exports.verifyAuth = async (req, res, next) => {
 
 
     if (token) {
-        jwt.verify(token, 'This secret key must be saved into a ENV variable', (error, Decodedtoken) => {
+        jwt.verify(token, process.env.JWT_SECRET_KEY, (error, Decodedtoken) => {
             if (error) {
                 res.redirect('/signin');
             }
